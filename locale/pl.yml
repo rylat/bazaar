@@ -1,0 +1,77 @@
+flagrow-bazaar:
+    admin:
+        loader:
+            is_loading: Przetwarzanie...
+        nav:
+            title: Bazaar
+            description: Rynek rozszerzeń.
+        header:
+            extensions: Przeglądaj rozszerzenia
+            tasks: Historia zadań
+        modal:
+            settings:
+                title: Flagrow Bazaar
+                field:
+                    apiToken: Token API
+                    apiTokenDescription: This api token is required to access the Flagrow extension api. If already set, you're good to go!
+            connect-bazaar:
+                title: Połącz
+                description: >
+                    Connect your Flarum forum to your personal account on {host} to unlock advanced features; including
+                    a dashboard that gives you an health overview of all your connected Flarum installations. We will
+                    add more functionality like notifications when your forum contains outdated extensions or the ability
+                    to update all Flarum installations centrally.
+            requirements:
+                file-permissions:
+                    title: Uprawnienia plików
+                    description: >
+                        It seems Bazaar has insufficient permissions to write files
+                        and/or directories, please review the list below. For further
+                        information, refer to <a>the wiki</a>.
+                php-memory_limit:
+                    title: Limit pamięci
+                    description: >
+                        We recommend allowing PHP to use at least {required} of memory, your php.ini currently allows {limit}.
+                        Although we try to increase the memory limit during runtime, success depends on your hosting environment.
+                        For further information, refer to <a>the wiki</a>.
+        page:
+            button:
+                more: Więcej
+                install: Zainstaluj
+                uninstall: Odinstaluj
+                enable: Włącz
+                disable: Wyłącz
+                update: Aktualizuj
+                connect: Połącz
+                favorite_button: "Ulubione rozszerzenie"
+                remove_favorite_button: "Usuń rozszerzenie z ulubionych"
+            extension:
+                installed: Rozszerzenie jest zainstalowane
+                enabled: Rozszerzenie jest włączone
+                vendor: By {vendor}
+                favorited: Jedno z twoich ulubionych
+                outdated: "Rozszerzenie jest przestarzałe, proszę uaktualnić do wersji {new}"
+            task:
+                header:
+                    status: Status
+                    command: Komenda
+                    output: Wyjście
+                    time: Czas
+                    details: Szczegóły
+                attribute:
+                    created_at: Stworzone o
+                    started_at: Rozpoczęte o
+                    finished_at: Skończone o
+                status:
+                    success: Sukces
+                    exception: Wystąpił błąd
+                    working: W trakcie
+                    unknown: Nieznane
+                command:
+                    install: Zainstaluj {extension}
+                    update: Aktualizuj {extension}
+                    uninstall: Odinstaluj {extension}
+                group:
+                    today: Dziś
+                    lastmonth: W ubiegłym miesiącu
+                    older: Starsze
